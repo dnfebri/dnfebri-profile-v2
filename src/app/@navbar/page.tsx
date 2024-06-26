@@ -1,7 +1,4 @@
 "use client";
-import { ButtonCloseMenuNav, ButtonOpenMenuNav } from "@/components/button";
-import { ButtonNav } from "@/components/button/ButtonNav";
-import { LIST_NAVIGATION_MENU } from "@/constant/listNavigationMenu";
 import { useLayout } from "@/hooks/useLayout";
 import React from "react";
 import { MenuNavigation } from "./_components/MenuNavigation";
@@ -15,10 +12,9 @@ export default function NavigationBar() {
         <div className="hidden lg:block">
           <NavigationDesktop />
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden z-10">
           <MenuNavigation />
         </div>
-        {/* <div className="fixed bottom-0">top</div> */}
       </div>
     </nav>
   );
